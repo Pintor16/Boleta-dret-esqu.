@@ -36,8 +36,8 @@ void draw() {
    c=y-75;
   if (diam1>mouseX) {
   if (diam2<mouseX) {
-  if (b>mouseX) {
-  if (c<mouseX) {
+  if (b>mouseY) {
+  if (c<mouseY) {
   contador=contador+1;}}}} 
 }
   
