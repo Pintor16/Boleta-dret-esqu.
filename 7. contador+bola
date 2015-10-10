@@ -1,0 +1,44 @@
+int x = 0;
+int y=250;
+int a =+4;
+int contador=0;
+int diam1=0;
+int diam2=0;
+int b=0;
+int c=0;
+
+void setup() {
+  size(500,500);
+}
+void draw() {
+  background(255);
+  noStroke();
+  fill(255,0,0);
+  ellipse(x,y,75,75);
+  textSize(25);
+  fill(0,255,0); 
+  text("Score="+contador, 350,25);
+  
+  x=x+a;
+  if(x>500){
+  a=-4;
+  x=x+a;
+  }
+  if(x<0){
+   a=+4;
+   x=x+a;
+}}
+
+ void mouseClicked() {
+   diam1=x+75;
+   diam2=x-75;
+   b=y+75;
+   c=y-75;
+  if (diam1>mouseX) {
+  if (diam2<mouseX) {
+  if (b>mouseX) {
+  if (c<mouseX) {
+  contador=contador+1;}}}} 
+}
+  
+ 
