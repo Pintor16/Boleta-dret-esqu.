@@ -1,0 +1,24 @@
+int y = 0;
+int a =+4;
+
+void setup() {
+  size(500,500);
+}
+void draw() {
+  y=y+a;
+  if(y>250){
+    y=y+a+4;}
+  if(y>500){
+  a=-4;
+  y=y+a;
+  }
+  if(y<250){
+    y=y+a-4;}
+  if(y<0){
+   a=+4;
+ y=y+a;
+}
+  fill(255,0,0);
+  background(255);
+  ellipse(100,y,50,50);
+}
