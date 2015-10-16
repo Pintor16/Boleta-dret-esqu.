@@ -1,0 +1,23 @@
+int a;
+int b;
+int c;
+int d;
+
+void setup() {
+  size(500,500);
+}
+
+void draw() {
+  background(255);
+  c=mouseX-a;
+  d=mouseY-b;
+    fill(255,0,0);
+  }
+  rect(a,b,c,d);
+}
+
+void mouseClicked() {
+  a=mouseX;
+  b=mouseY;
+  
+}
